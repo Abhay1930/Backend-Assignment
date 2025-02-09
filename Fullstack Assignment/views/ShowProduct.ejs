@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css?v=<%= Date.now() %>">
+
+</head>
+<body>
+    <h1>All Products</h1>
+
+    <% for(let product of Products) { %>
+        <div class="product-card">
+            <h1><%= product.productName %></h1>
+            <h2>Category: <%= product.category %></h2>
+            <h3>Price: ₹<%= product.price %></h3>
+
+            <form action="/product/delete/<%= product.id %>?_method=DELETE" method="POST">
+                <button type="submit">DELETE</button>
+            </form>
+
+            <button>
+                <a href="/product/update/<%= product.id %>">Update</a>
+            </button>
+        </div>
+    <% } %>
+</body>
+</html>

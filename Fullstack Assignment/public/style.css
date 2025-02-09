@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+form {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form div {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #2a2a2a;
+    color: #ffffff;
+}
+
+
+button {
+    background: #00c853;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background: #009624;
+}
+
+
+.product-card {
+    background: #1e1e1e;
+    margin: 15px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+.product-card h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #03dac6;
+}
+
+.product-card h2 {
+    font-size: 16px;
+    color: #b0bec5;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    color: #00c853;
+}
+
+
+.delete-button {
+    background: #ff5252;
+}
+
+.delete-button:hover {
+    background: #d32f2f;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .product-card {
+        width: 95%;
+    }
+}
